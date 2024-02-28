@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    tools:context=".telaTransporte">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="160dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Ordem de transporte"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/DataOT"
+            android:layout_width="192dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="107dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/bordaedit"
+            android:hint="DIA/MES/ANO"
+            android:inputType="none"
+            android:onClick="AdicionarData1"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/MotoristaEdit"
+            android:layout_width="192dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="107dp"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Motorista"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/veiculoEdit"
+            android:layout_width="192dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="107dp"
+            android:layout_marginTop="224dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Veiculo"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/placaEdit"
+            android:layout_width="192dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="107dp"
+            android:layout_marginTop="287dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Placa"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/KmSaidaEdit"
+            android:layout_width="192dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="107dp"
+            android:layout_marginTop="348dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Km saida"
+            android:inputType="number"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/KmFinalEdit"
+            android:layout_width="192dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="107dp"
+            android:layout_marginTop="413dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Km Final"
+            android:inputType="number"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/HoraInicialEdit"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="474dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Hora Inicial"
+            android:inputType="none"
+            android:onClick="TimePicker1"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/DataHI"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="546dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Dia/Mes/Ano"
+            android:inputType="none"
+            android:onClick="AdicionarData2"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/HoraFinalEdit"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="244dp"
+            android:layout_marginTop="475dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Hora Final"
+            android:inputType="none"
+            android:onClick="TimePicker2"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/DataHF"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="244dp"
+            android:layout_marginTop="546dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Dia/Mes/Ano"
+            android:inputType="none"
+            android:onClick="AdicionarData3"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/PernoitesEdit"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="138dp"
+            android:layout_marginTop="609dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Pernoites"
+            android:inputType="number"
+            android:padding="8dp" />
+
+        <View
+            android:id="@+id/linha"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_marginTop="658dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/detalhes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linha"
+            android:text="CLIENTE E FORNECEDOR:"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ChegadaCliente"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/detalhes"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Chegada (C)"
+            android:inputType="none"
+            android:onClick="DataChegada"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/HoraChegada"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/detalhes"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Horario"
+            android:inputType="none"
+            android:onClick="HoraChegada"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/saidaDoCliente"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/ChegadaCliente"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Saida (C)"
+            android:inputType="none"
+            android:onClick="DataSaida"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/HoraSaida"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/HoraChegada"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Horario"
+            android:inputType="none"
+            android:onClick="HoraSaida"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/Destino"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/saidaDoCliente"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Destino (F)"
+            android:inputType="none"
+            android:onClick="DataDestino"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/HoraDestino"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/HoraSaida"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Horario"
+            android:inputType="none"
+            android:onClick="HoraDestino"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/DestinoSaida"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/Destino"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Saida (F)"
+            android:inputType="none"
+            android:onClick="SaidaDestino"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/HoraSaidaCliente"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/HoraDestino"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bordaedit"
+            android:hint="Horario"
+            android:inputType="none"
+            android:onClick="HoraSaidaDestino"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/botaosalvar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CARD"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/botaogerar"
+            android:text="Salvar"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/gerarpdf"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CARD"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/botaoexcluir"
+            android:text="Gerar PDF"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="230dp"
+            android:layout_height="60dp"
+            android:id="@+id/CARD"
+            android:layout_below="@id/HoraSaidaCliente"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="90dp"
+            android:background="@drawable/bordaeditlogin">
+
+            <EditText
+                android:id="@+id/Observacoes"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Observações"
+                android:inputType="textMultiLine"
+                android:layout_marginStart="20sp"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="410dp"
+    android:layout_height="730dp"
+    tools:context=".telaCadastro">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro"
+        android:layout_marginStart="105dp"
+        android:textSize="50sp"
+        android:textColor="@color/cadastro"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/bc3_image"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:src="@drawable/bc3"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="440dp"
+        />
+
+    <ImageButton
+        android:id="@+id/Bc3_button"
+        android:layout_width="152dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="440dp"
+        android:background="@null"
+        android:contentDescription="Botão de cadastro"
+        />
+
+    <EditText
+        android:id="@+id/editcpf"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:hint="EMAIL"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="150dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/bordaeditlogin"
+        />
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="163dp"
+        android:layout_marginStart="300dp"
+        android:src="@drawable/email"
+        android:layout_marginRight="8dp"
+        />
+
+    <EditText
+        android:id="@+id/editSenha"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:hint="SENHA"
+        android:inputType="textVisiblePassword"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="246dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:background="@drawable/bordaeditlogin"
+        />
+
+    <ImageView
+        android:id="@+id/Senha"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="260dp"
+        android:layout_marginStart="300dp"
+        android:src="@drawable/senha"
+        android:layout_marginRight="8dp"
+        />
+
+    <EditText
+        android:id="@+id/Repetirsenha"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:hint="REPETIR SENHA"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="346dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:inputType="textVisiblePassword"
+        android:background="@drawable/bordaeditlogin"
+        />
+
+</RelativeLayout>

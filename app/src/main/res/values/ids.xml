@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnCancel" type="id" />
+    <item name="caixa" type="id" />
+    <item name="btnReset" type="id" />
+    <item name="emailBox" type="id" />
+    <item name="forgotTitle" type="id" />
+    <item name="desc" type="id" />
+    <item name="dialog_forgot" type="id" />
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "292031535955",
+    "project_id": "projeto-kojima",
+    "storage_bucket": "projeto-kojima.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292031535955:android:5c4865a81150a24b8fdfa6",
+        "android_client_info": {
+          "package_name": "com.example.kojima_transporte_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZUUaMpy2x--56SgtrB7a3Z8RTUB5F9eA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
